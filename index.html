@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meril's Collection — Angel's First Choice | Premium Three-Piece in Bangladesh</title>
+<meta name="description" content="Meril's Collection — bringing Bangladeshi beauty to everyday wear. Premium unstitched three-piece suits with cash on delivery all over Bangladesh. Order on WhatsApp." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Meril's Collection — Angel's First Choice" />
+<meta property="og:description" content="Premium three-piece suits. Cash on delivery all over Bangladesh. Order on WhatsApp." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="images/suit-pink.jpg" />
+
+<meta name="google-site-verification" content="796c4365ef23a341" />
+<link rel="icon" type="image/png" href="images/emblem.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --petrol:#07323d;
+    --petrol-2:#0a4150;
+    --teal:#0c4c5c;
+    --cyan:#1fbcd6;
+    --cyan-bright:#33d2ec;
+    --soft-cyan:#d7f1f6;
+    --cream:#fbf9f4;
+    --gold:#c8922f;
+    --ink:#0c2228;
+    --muted:#5d7178;
+    --line:rgba(7,50,61,.12);
+    --shadow:0 18px 50px -20px rgba(7,50,61,.45);
+    --maxw:1180px;
+    --r:18px;
+    --display:"Fraunces",Georgia,serif;
+    --body:"Manrope",system-ui,sans-serif;
+    --bn:"Hind Siliguri","Manrope",sans-serif;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--body);
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .bn{font-family:var(--bn)}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  section{position:relative}
+
+  .eyebrow{
+    font-family:var(--bn);
+    font-size:.82rem;letter-spacing:.04em;font-weight:600;
+    color:var(--cyan);text-transform:none;
+    display:inline-flex;align-items:center;gap:.5rem;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--cyan);opacity:.6}
+  .eyebrow.center::before{display:none}
+
+  h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.08;letter-spacing:-.01em}
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:.55rem;
+    font-family:var(--body);font-weight:700;font-size:.98rem;
+    padding:.85rem 1.45rem;border-radius:999px;border:0;cursor:pointer;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    white-space:nowrap;
+  }
+  .btn svg{width:1.15em;height:1.15em}
+  .btn-wa{background:#1faf54;color:#fff;box-shadow:0 12px 28px -12px rgba(31,175,84,.8)}
+  .btn-wa:hover{transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(31,175,84,.9)}
+  .btn-msgr{background:#0866ff;color:#fff;box-shadow:0 12px 28px -12px rgba(8,102,255,.7)}
+  .btn-msgr:hover{transform:translateY(-2px)}
+  .btn-cyan{background:var(--cyan);color:var(--petrol);box-shadow:0 12px 28px -14px rgba(31,188,214,.9)}
+  .btn-cyan:hover{transform:translateY(-2px);background:var(--cyan-bright)}
+  .btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.32);color:#fff}
+  .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.07)}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(7,50,61,.82);backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{display:flex;align-items:center;gap:.65rem;color:#fff}
+  .brand img{width:40px;height:40px;filter:drop-shadow(0 0 10px rgba(31,188,214,.5))}
+  .brand .name{font-family:var(--display);font-weight:600;font-size:1.18rem;line-height:1}
+  .brand .tag{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);font-weight:600}
+  .nav-links{display:flex;gap:1.7rem;align-items:center}
+  .nav-links a{color:rgba(255,255,255,.82);font-weight:600;font-size:.92rem;transition:color .15s}
+  .nav-links a:hover{color:var(--cyan-bright)}
+  .nav .btn{padding:.6rem 1.1rem;font-size:.9rem}
+  .burger{display:none;background:none;border:0;color:#fff;cursor:pointer}
+  .burger svg{width:26px;height:26px}
+
+  /* ---------- hero ---------- */
+  .hero{background:radial-gradient(120% 120% at 80% -10%, #0c5566 0%, var(--petrol) 52%, #052730 100%);color:#fff;overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:74px 22px 88px}
+  .hero h1{font-size:clamp(2.5rem,5.4vw,4.15rem);margin:.6rem 0 .1rem}
+  .hero h1 em{font-style:italic;color:var(--cyan-bright)}
+  .hero p.lead{color:rgba(255,255,255,.82);font-size:1.08rem;max-width:33ch;margin:1.1rem 0 1.9rem}
+  .hero-cta{display:flex;gap:.8rem;flex-wrap:wrap}
+  .trust{display:flex;gap:1.6rem;margin-top:2.4rem;flex-wrap:wrap}
+  .trust .t{display:flex;flex-direction:column}
+  .trust .num{font-family:var(--display);font-size:1.55rem;color:#fff;line-height:1}
+  .trust .lbl{font-size:.78rem;color:rgba(255,255,255,.62);letter-spacing:.02em}
+  .trust .div{width:1px;background:rgba(255,255,255,.14)}
+
+  /* arched hero image w/ halo */
+  .hero-art{position:relative;justify-self:center}
+  .arch{
+    width:min(380px,80vw);aspect-ratio:3/4;
+    border-radius:190px 190px 24px 24px;
+    overflow:hidden;position:relative;z-index:2;
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:0 40px 90px -30px rgba(0,0,0,.65);
+  }
+  .arch img{width:100%;height:100%;object-fit:cover}
+  .halo{
+    position:absolute;inset:-14% -14% -8% -14%;z-index:1;
+    background:radial-gradient(circle at 50% 42%, rgba(51,210,236,.55), rgba(31,188,214,0) 62%);
+    filter:blur(8px);
+  }
+  .badge-float{
+    position:absolute;z-index:3;bottom:18px;left:-26px;
+    background:rgba(255,255,255,.96);color:var(--petrol);
+    border-radius:14px;padding:.7rem .95rem;box-shadow:var(--shadow);
+    display:flex;align-items:center;gap:.6rem;
+  }
+  .badge-float .star{color:var(--gold)}
+  .badge-float b{font-family:var(--display);font-size:1.05rem}
+  .badge-float small{display:block;color:var(--muted);font-size:.72rem;font-weight:600}
+
+  .sparkle{position:absolute;color:var(--cyan-bright);opacity:.0;animation:tw 4s ease-in-out infinite}
+  @keyframes tw{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:.9;transform:scale(1)}}
+
+  /* ---------- ticker ---------- */
+  .ticker{background:var(--gold);color:#3a2a06;overflow:hidden;white-space:nowrap;border-top:1px solid rgba(0,0,0,.06)}
+  .ticker .run{display:inline-flex;gap:0;align-items:center;animation:marq 26s linear infinite}
+  .ticker span{display:inline-flex;align-items:center;padding:.65rem 0;font-weight:700;font-size:.86rem;letter-spacing:.02em}
+  .ticker span::after{content:"✦";margin:0 1.6rem;opacity:.5}
+  @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---------- section heading ---------- */
+  .head{text-align:center;max-width:620px;margin:0 auto 46px}
+  .head h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:.5rem 0 .6rem}
+  .head p{color:var(--muted);font-size:1.05rem}
+
+  .collection{padding:84px 0}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .card{
+    background:#fff;border-radius:var(--r);overflow:hidden;
+    border:1px solid var(--line);box-shadow:0 10px 30px -22px rgba(7,50,61,.5);
+    display:flex;flex-direction:column;transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .card .ph{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--soft-cyan)}
+  .card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .card:hover .ph img{transform:scale(1.05)}
+  .card .ph .code{position:absolute;top:10px;left:10px;background:rgba(7,50,61,.82);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.06em;padding:.28rem .55rem;border-radius:6px}
+  .card .body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:.55rem;flex:1}
+  .card h3{font-size:1.18rem}
+  .card .desc{color:var(--muted);font-size:.86rem;flex:1}
+  .card .price{font-family:var(--display);color:var(--teal);font-weight:600;font-size:1rem}
+  .card .price small{color:var(--muted);font-weight:500;font-family:var(--body);font-size:.74rem}
+  .card .order-btn{margin-top:.4rem;width:100%;justify-content:center;font-size:.9rem;padding:.7rem}
+
+  /* ---------- why ---------- */
+  .why{background:var(--petrol);color:#fff;padding:88px 0}
+  .why .head h2{color:#fff}
+  .why .head p{color:rgba(255,255,255,.66)}
+  .feats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .feat{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:26px 22px}
+  .feat .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(31,188,214,.16);color:var(--cyan-bright);margin-bottom:14px}
+  .feat .ic svg{width:24px;height:24px}
+  .feat h3{font-size:1.18rem;margin-bottom:.4rem}
+  .feat p{color:rgba(255,255,255,.66);font-size:.9rem}
+
+  /* ---------- steps ---------- */
+  .steps{padding:84px 0}
+  .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;counter-reset:s}
+  .step{position:relative;padding:30px 24px;border-radius:var(--r);background:#fff;border:1px solid var(--line)}
+  .step::before{counter-increment:s;content:"0" counter(s);font-family:var(--display);font-size:2.4rem;color:var(--cyan);opacity:.9;display:block;margin-bottom:.4rem;line-height:1}
+  .step h3{font-size:1.25rem;margin-bottom:.4rem}
+  .step p{color:var(--muted);font-size:.92rem}
+
+  /* ---------- order form ---------- */
+  .order{background:linear-gradient(180deg,#0a4150,#07323d);color:#fff;padding:88px 0}
+  .order-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+  .order-info .eyebrow{color:var(--cyan-bright)}
+  .order-info h2{font-size:clamp(2rem,3.4vw,2.7rem);color:#fff;margin:.5rem 0 1rem}
+  .order-info p{color:rgba(255,255,255,.74);margin-bottom:1.4rem}
+  .order-info ul{list-style:none;display:flex;flex-direction:column;gap:.85rem}
+  .order-info li{display:flex;gap:.7rem;align-items:flex-start;color:rgba(255,255,255,.9);font-size:.95rem}
+  .order-info li svg{width:20px;height:20px;color:var(--cyan-bright);flex:none;margin-top:.18rem}
+  .alt-contact{margin-top:1.8rem;display:flex;gap:.7rem;flex-wrap:wrap}
+
+  form.card-form{background:#fff;color:var(--ink);border-radius:22px;padding:28px;box-shadow:var(--shadow)}
+  .pickpill{display:none;align-items:center;gap:.5rem;background:var(--soft-cyan);color:var(--teal);font-weight:700;font-size:.82rem;padding:.5rem .8rem;border-radius:999px;margin-bottom:1rem}
+  .field{margin-bottom:1rem}
+  .field label{display:block;font-weight:700;font-size:.82rem;margin-bottom:.35rem;color:var(--ink)}
+  .field label .req{color:#d6453f}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  input,select,textarea{
+    width:100%;font-family:var(--body);font-size:.95rem;color:var(--ink);
+    padding:.72rem .85rem;border:1.5px solid var(--line);border-radius:11px;background:#fff;
+    transition:border-color .15s, box-shadow .15s;
+  }
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 3px rgba(31,188,214,.16)}
+  textarea{resize:vertical;min-height:62px}
+  .form-submit{width:100%;justify-content:center;font-size:1.05rem;padding:.95rem;margin-top:.3rem}
+  .form-note{font-size:.78rem;color:var(--muted);text-align:center;margin-top:.8rem}
+
+  /* ---------- reviews ---------- */
+  .reviews{padding:84px 0;background:var(--soft-cyan)}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .rev{background:#fff;border-radius:var(--r);padding:26px;border:1px solid var(--line);box-shadow:0 10px 30px -24px rgba(7,50,61,.5)}
+  .rev .stars{color:var(--gold);letter-spacing:2px;margin-bottom:.7rem}
+  .rev p{font-size:.96rem;color:#324b52}
+  .rev .who{margin-top:1rem;font-weight:700;font-size:.88rem}
+  .rev .who span{display:block;color:var(--muted);font-weight:500;font-size:.78rem}
+
+  /* ---------- footer ---------- */
+  footer{background:#052730;color:rgba(255,255,255,.78);padding:60px 0 28px}
+  .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  footer .brand{margin-bottom:1rem}
+  footer h4{font-family:var(--display);color:#fff;font-size:1.05rem;margin-bottom:1rem;font-weight:600}
+  footer .ct{display:flex;flex-direction:column;gap:.7rem;font-size:.92rem}
+  footer .ct a,footer .ct span{display:flex;gap:.6rem;align-items:flex-start}
+  footer .ct svg{width:18px;height:18px;color:var(--cyan);flex:none;margin-top:.18rem}
+  footer .ct a:hover{color:var(--cyan-bright)}
+  .socials{display:flex;gap:.6rem;margin-top:.3rem}
+  .socials a{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,.08);transition:background .15s}
+  .socials a:hover{background:var(--cyan)}
+  .socials svg{width:20px;height:20px;color:#fff}
+  .foot-bot{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.8rem;color:rgba(255,255,255,.5)}
+
+  /* floating WA */
+  .fab{position:fixed;right:18px;bottom:18px;z-index:80;display:flex;align-items:center;gap:.6rem;background:#1faf54;color:#fff;padding:.8rem 1.1rem;border-radius:999px;box-shadow:0 16px 34px -12px rgba(31,175,84,.8);font-weight:700;font-size:.92rem;transition:transform .18s}
+  .fab:hover{transform:scale(1.05)}
+  .fab svg{width:22px;height:22px}
+  .fab .fab-txt{display:inline}
+
+  @media(max-width:980px){
+    .hero .wrap{grid-template-columns:1fr;text-align:center;gap:36px;padding:56px 22px 70px}
+    .hero p.lead{margin-left:auto;margin-right:auto}
+    .hero-cta,.trust{justify-content:center}
+    .eyebrow{justify-content:center}
+    .grid{grid-template-columns:repeat(2,1fr)}
+    .feats{grid-template-columns:repeat(2,1fr)}
+    .steps-grid{grid-template-columns:1fr}
+    .order-grid{grid-template-columns:1fr;gap:32px}
+    .rev-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:620px){
+    .nav-links{
+      position:absolute;top:68px;left:0;right:0;background:var(--petrol);
+      flex-direction:column;gap:0;padding:0 22px;max-height:0;overflow:hidden;
+      transition:max-height .3s ease;border-bottom:1px solid rgba(255,255,255,.1)
+    }
+    .nav-links.open{max-height:340px;padding:14px 22px 20px}
+    .nav-links a{padding:.6rem 0;width:100%}
+    .nav-links .btn{width:100%;justify-content:center;margin-top:.5rem}
+    .burger{display:block}
+    .grid{grid-template-columns:1fr}
+    .feats{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    .row{grid-template-columns:1fr}
+    .fab .fab-txt{display:none}
+    .fab{padding:.85rem}
+    .trust{gap:1.1rem}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img src="images/emblem.png" alt="Meril's Collection logo" />
+      <div>
+        <div class="name">Meril's Collection</div>
+        <div class="tag">Angel's First Choice</div>
+      </div>
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#collection">Collection</a>
+      <a href="#why">Why Us</a>
+      <a href="#steps">How to Order</a>
+      <a href="#reviews">Reviews</a>
+      <a class="btn btn-wa" id="nav-wa" href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.917zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp
+      </a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow bn">পরীর প্রথম পছন্দ · Angel's First Choice</span>
+      <h1>Bangladeshi beauty for <em>everyday</em> wear.</h1>
+      <p class="lead">Hand-picked premium three-piece suits — soft cotton & lawn, real photos, fair prices. Delivered to your door, all over Bangladesh.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" id="hero-wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.917z"/></svg>Order on WhatsApp</a>
+        <a class="btn btn-ghost" href="#collection">View Collection</a>
+      </div>
+      <div class="trust">
+        <div class="t"><span class="num">13K+</span><span class="lbl">Happy followers</span></div>
+        <div class="div"></div>
+        <div class="t"><span class="num">100%</span><span class="lbl">Recommend us</span></div>
+        <div class="div"></div>
+        <div class="t"><span class="num">COD</span><span class="lbl">All Bangladesh</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <span class="sparkle" style="top:-10px;left:6%;font-size:18px">✦</span>
+      <span class="sparkle" style="top:30%;right:-14px;font-size:13px;animation-delay:1.2s">✦</span>
+      <span class="sparkle" style="bottom:8%;right:14%;font-size:22px;animation-delay:2s">✦</span>
+      <div class="halo"></div>
+      <div class="arch">
+        <img src="images/suit-pink.jpg" alt="Pink embroidered three-piece suit" />
+      </div>
+      <div class="badge-float">
+        <span class="star">★</span>
+        <div><b>4.9 / 5</b><small>8 verified reviews</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="run">
+    <span>Soft cotton &amp; lawn fabric</span><span>Cash on delivery</span><span>Delivery all over Bangladesh</span><span>Real product photos</span><span>bKash · Nagad accepted</span><span>Friendly support, always open</span>
+    <span>Soft cotton &amp; lawn fabric</span><span>Cash on delivery</span><span>Delivery all over Bangladesh</span><span>Real product photos</span><span>bKash · Nagad accepted</span><span>Friendly support, always open</span>
+  </div>
+</div>
+
+<!-- ============ COLLECTION ============ -->
+<section class="collection" id="collection">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow center">New arrivals</span>
+      <h2>This season's collection</h2>
+      <p>Each piece is chosen for comfort, colour and a little bit of magic. Tap “Order this” and your choice fills in automatically.</p>
+    </div>
+    <div class="grid" id="grid">
+      <!-- cards injected by JS so design data stays in one place -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow center">Why Meril's</span>
+      <h2>Shopping you can trust</h2>
+      <p>We started on Facebook with 13,000+ followers who keep coming back. Here's why.</p>
+    </div>
+    <div class="feats">
+      <div class="feat">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3L12 16.8 6.5 19.5l1-6.3L3 8.9 9 8z"/></svg></div>
+        <h3>Premium fabric</h3>
+        <p>Soft, breathable cotton & lawn three-piece suits made for Bangladesh's weather.</p>
+      </div>
+      <div class="feat">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="9" r="1.8"/><path d="M21 16l-5-5L5 21"/></svg></div>
+        <h3>Real photos</h3>
+        <p>What you see is what arrives. Every design is shot in our own studio and shop.</p>
+      </div>
+      <div class="feat">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h13v8H3z"/><path d="M16 10h4l1 3v2h-5z"/><circle cx="7" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/></svg></div>
+        <h3>Cash on delivery</h3>
+        <p>Pay when you receive it — anywhere in the country. bKash & Nagad also welcome.</p>
+      </div>
+      <div class="feat">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <h3>Always here</h3>
+        <p>Questions before you buy? Message us on WhatsApp or Messenger any time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STEPS ============ -->
+<section class="steps" id="steps">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow center">Simple &amp; safe</span>
+      <h2>Order in 3 easy steps</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <h3>Pick your design</h3>
+        <p>Browse the collection and tap “Order this” on the one you love.</p>
+      </div>
+      <div class="step">
+        <h3>Fill the quick form</h3>
+        <p>Add your name, phone and address. It opens WhatsApp with everything pre-filled — just press send.</p>
+      </div>
+      <div class="step">
+        <h3>Pay on delivery</h3>
+        <p>We confirm, pack and ship. Pay cash when the parcel reaches your door.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ORDER FORM ============ -->
+<section class="order" id="order">
+  <div class="wrap order-grid">
+    <div class="order-info">
+      <span class="eyebrow">Place your order</span>
+      <h2>Tell us what you'd love</h2>
+      <p>Fill this in and we'll receive your order straight on WhatsApp. We'll confirm price, delivery charge and timing with you right away.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Delivery all over Bangladesh — inside &amp; outside Dhaka</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Cash on delivery, bKash &amp; Nagad accepted</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Friendly help in Bangla &amp; English, always open</li>
+      </ul>
+      <div class="alt-contact">
+        <a class="btn btn-msgr" id="msgr-btn" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.44 3.14 7.17.16.14.26.35.27.57l.05 1.78c.02.57.6.94 1.12.71l1.99-.88c.17-.07.36-.09.54-.04 1 .27 2.05.42 3.12.42 5.64 0 10-4.13 10-9.7S17.64 2 12 2zm6 7.46l-2.93 4.66c-.47.74-1.47.93-2.18.4l-2.33-1.75a.6.6 0 00-.72 0l-3.15 2.39c-.42.32-.97-.18-.69-.63l2.93-4.66c.47-.74 1.47-.93 2.18-.4l2.33 1.75c.21.16.51.16.72 0l3.15-2.39c.42-.32.97.18.69.63z"/></svg>Messenger</a>
+        <a class="btn btn-cyan" id="call-btn" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02z"/></svg>Call</a>
+      </div>
+    </div>
+
+    <form class="card-form" id="orderForm" novalidate>
+      <div class="pickpill" id="pickpill"><span>✦</span><span id="pickpill-text"></span></div>
+      <div class="field">
+        <label for="f-name">Your name <span class="req">*</span></label>
+        <input type="text" id="f-name" name="name" placeholder="e.g. Anjuman Aara" required />
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="f-phone">WhatsApp number <span class="req">*</span></label>
+          <input type="tel" id="f-phone" name="phone" placeholder="01XXXXXXXXX" required />
+        </div>
+        <div class="field">
+          <label for="f-area">Delivery area</label>
+          <select id="f-area" name="area">
+            <option>Inside Dhaka</option>
+            <option>Outside Dhaka</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-address">Full delivery address <span class="req">*</span></label>
+        <textarea id="f-address" name="address" placeholder="House / road, area, thana, district" required></textarea>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="f-design">Choose design</label>
+          <select id="f-design" name="design"></select>
+        </div>
+        <div class="field">
+          <label for="f-qty">Quantity</label>
+          <input type="number" id="f-qty" name="qty" value="1" min="1" />
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-notes">Notes (optional)</label>
+        <textarea id="f-notes" name="notes" placeholder="Any colour preference or question"></textarea>
+      </div>
+      <button type="submit" class="btn btn-wa form-submit">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.917z"/></svg>
+        Send order on WhatsApp
+      </button>
+      <p class="form-note">WhatsApp will open with your order ready — just press send. No payment online.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow center">Loved by customers</span>
+      <h2>Words from our angels</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Fabric quality onek bhalo, exactly like the photo. Delivery was fast and the apu helped me choose. Highly recommend!”</p>
+        <div class="who">Shammi Akter Lisa <span>Dhaka</span></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Cash on delivery niyechi Rangpur theke. Packaging sundor, colour bright. Will order again for Eid inshallah.”</p>
+        <div class="who">Md Sayem <span>Rangpur</span></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Beautiful three-piece, very comfortable cotton. Got so many compliments. Meril's is now my first choice.”</p>
+        <div class="who">Abdul Halim <span>Khulna</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top">
+          <img src="images/emblem.png" alt="Meril's Collection" />
+          <div>
+            <div class="name">Meril's Collection</div>
+            <div class="tag">Angel's First Choice</div>
+          </div>
+        </a>
+        <p style="max-width:34ch;font-size:.92rem">Bringing Bangladeshi beauty to everyday wear — premium three-piece suits, delivered with care.</p>
+        <div class="socials">
+          <a id="foot-wa" href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.917z"/></svg></a>
+          <a id="foot-msgr" href="#" aria-label="Messenger"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.44 3.14 7.17.16.14.26.35.27.57l.05 1.78c.02.57.6.94 1.12.71l1.99-.88c.17-.07.36-.09.54-.04 1 .27 2.05.42 3.12.42 5.64 0 10-4.13 10-9.7S17.64 2 12 2zm6 7.46l-2.93 4.66c-.47.74-1.47.93-2.18.4l-2.33-1.75a.6.6 0 00-.72 0l-3.15 2.39c-.42.32-.97-.18-.69-.63l2.93-4.66c.47-.74 1.47-.93 2.18-.4l2.33 1.75c.21.16.51.16.72 0l3.15-2.39c.42-.32.97.18.69.63z"/></svg></a>
+          <a id="foot-fb" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="ct">
+          <a id="ct-phone" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>01986-095371</a>
+          <a id="ct-wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.917z"/></svg>+880 1986-095371</a>
+          <a href="mailto:anjuman.aara198@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>anjuman.aara198@gmail.com</a>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lalbagh, Dhaka 1207, Bangladesh</span>
+        </div>
+      </div>
+      <div>
+        <h4>We deliver to</h4>
+        <div class="ct">
+          <span style="display:block">Dhaka · Rangpur · Khulna · Rajshahi &amp; all divisions of Bangladesh.</span>
+          <span style="display:block;margin-top:.4rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:.3rem"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Always open — order any time.</span>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr"></span> Meril's Collection. All rights reserved.</span>
+      <span>Colours may vary slightly from your screen. Prices confirmed on WhatsApp.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" id="fab" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.917z"/></svg><span class="fab-txt">Order on WhatsApp</span></a>
+
+<script>
+/* =========================================================
+   EDIT YOUR DETAILS HERE  — everything the site uses lives in CONFIG.
+   • whatsapp / phone : digits only, with country code (880…), no + or spaces
+   • messenger        : your m.me link if you have one, else the FB page link
+   ========================================================= */
+const CONFIG = {
+  whatsapp:  "8801986095371",
+  phone:     "8801986095371",
+  messenger: "https://www.facebook.com/share/1HFePryHBV/",  // replace with m.me/<your-username> when you have it
+  facebook:  "https://www.facebook.com/share/1HFePryHBV/",
+  email:     "anjuman.aara198@gmail.com"
+};
+
+/* ---- Collection data (one place to edit products) ---- */
+const PRODUCTS = [
+  { id:"SF-8043", name:"Bakht — Pink Embroidered", img:"images/suit-pink.jpg",
+    desc:"Soft pink lawn three-piece with fine thread embroidery & ikat dupatta.", price:"Price on WhatsApp" },
+  { id:"ML-021",  name:"Lavender Royal Print", img:"images/suit-lavender.jpg",
+    desc:"Luxe lavender digital-print suit with golden border dupatta.", price:"Price on WhatsApp" },
+  { id:"ML-014",  name:"Sky Floral Cotton", img:"images/suit-blue.jpg",
+    desc:"Breezy sky-blue cotton with bright floral panel — perfect for daily wear.", price:"Price on WhatsApp" },
+  { id:"ML-009",  name:"Rainbow Bandhani", img:"images/suit-rainbow.jpg",
+    desc:"Vivid multi-colour bandhani print three-piece, festive & eye-catching.", price:"Price on WhatsApp" },
+];
+
+/* ---- wire up all links ---- */
+const waBase = "https://wa.me/" + CONFIG.whatsapp;
+document.querySelectorAll("#nav-wa,#hero-wa,#foot-wa,#ct-wa,#fab").forEach(a=>{
+  a.href = waBase + "?text=" + encodeURIComponent("Assalamu Alaikum Meril's Collection 👋 I'd like to know more about your three-piece collection.");
+});
+document.querySelectorAll("#msgr-btn,#foot-msgr").forEach(a=>{a.href=CONFIG.messenger;a.target="_blank";a.rel="noopener"});
+document.getElementById("foot-fb").href = CONFIG.facebook;
+document.getElementById("foot-fb").target = "_blank";
+document.querySelectorAll("#call-btn,#ct-phone").forEach(a=>{a.href="tel:+"+CONFIG.phone});
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+/* ---- build collection cards + design dropdown ---- */
+const grid = document.getElementById("grid");
+const designSel = document.getElementById("f-design");
+PRODUCTS.forEach(p=>{
+  const card = document.createElement("div");
+  card.className = "card";
+  card.innerHTML = `
+    <div class="ph"><span class="code">${p.id}</span><img src="${p.img}" alt="${p.name}" loading="lazy"></div>
+    <div class="body">
+      <h3>${p.name}</h3>
+      <p class="desc">${p.desc}</p>
+      <span class="price">${p.price}</span>
+      <button class="btn btn-cyan order-btn" data-name="${p.name}" data-id="${p.id}">Order this</button>
+    </div>`;
+  grid.appendChild(card);
+
+  const opt = document.createElement("option");
+  opt.value = `${p.name} (${p.id})`;
+  opt.textContent = `${p.name} (${p.id})`;
+  designSel.appendChild(opt);
+});
+const other = document.createElement("option");
+other.value = "Other / not sure yet";
+other.textContent = "Other / not sure yet";
+designSel.appendChild(other);
+
+/* ---- "Order this" → set design, show pill, scroll to form ---- */
+const pill = document.getElementById("pickpill");
+const pillText = document.getElementById("pickpill-text");
+grid.addEventListener("click", e=>{
+  const b = e.target.closest(".order-btn");
+  if(!b) return;
+  const val = `${b.dataset.name} (${b.dataset.id})`;
+  designSel.value = val;
+  pillText.textContent = "Selected: " + b.dataset.name;
+  pill.style.display = "inline-flex";
+  document.getElementById("order").scrollIntoView({behavior:"smooth"});
+  setTimeout(()=>document.getElementById("f-name").focus(),550);
+});
+
+/* ---- form → WhatsApp ---- */
+document.getElementById("orderForm").addEventListener("submit", e=>{
+  e.preventDefault();
+  const name = document.getElementById("f-name").value.trim();
+  const phone = document.getElementById("f-phone").value.trim();
+  const address = document.getElementById("f-address").value.trim();
+  const area = document.getElementById("f-area").value;
+  const design = document.getElementById("f-design").value;
+  const qty = document.getElementById("f-qty").value || "1";
+  const notes = document.getElementById("f-notes").value.trim();
+
+  if(!name || !phone || !address){
+    alert("Please fill in your name, phone number and delivery address.");
+    return;
+  }
+
+  const msg =
+`Assalamu Alaikum Meril's Collection 👋
+I want to place an order:
+
+🧕 Name: ${name}
+📞 Phone: ${phone}
+📍 Address: ${address}
+🚚 Delivery: ${area}
+👗 Design: ${design}
+🔢 Quantity: ${qty}` +
+(notes ? `\n📝 Notes: ${notes}` : "");
+
+  window.open(waBase + "?text=" + encodeURIComponent(msg), "_blank");
+});
+
+/* ---- mobile menu ---- */
+const burger = document.getElementById("burger");
+const navlinks = document.getElementById("navlinks");
+burger.addEventListener("click", ()=>navlinks.classList.toggle("open"));
+navlinks.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>navlinks.classList.remove("open")));
+</script>
+</body>
+</html>
